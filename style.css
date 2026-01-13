@@ -24,7 +24,7 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
+
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -67,7 +67,7 @@ body {
     box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
 }
 
-/* GRID LAYOUT */
+
 .grid {
     max-width: 1200px;
     margin: auto;
@@ -100,14 +100,13 @@ body {
     grid-column: span 2;
 }
 
-/* ALINÉA */
 .alinea {
     text-indent: 40px;
     text-align: justify;
     margin-bottom: 15px;
 }
 
-/* CONTACT LIST */
+
 .contact-list li {
     margin-bottom: 15px;
     display: flex;
@@ -121,7 +120,7 @@ body {
     text-align: center;
 }
 
-/* SKILLS */
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -136,7 +135,7 @@ body {
     font-size: 14px;
 }
 
-/* ELEMENTS */
+
 .date {
     font-size: 0.9rem;
     color: var(--muted);
@@ -149,7 +148,7 @@ a {
     text-decoration: none;
 }
 
-/* DIPLOME */
+
 .bac-container {
     margin-top: 20px;
     text-align: center;
@@ -167,13 +166,13 @@ footer {
     color: var(--muted);
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 900px) {
     .grid { grid-template-columns: 1fr; }
     .wide { grid-column: span 1; }
 }
 
-/* PRINT */
+
 @media print {
     body { background: white; color: black; }
     .pdf-btn { display: none; }
@@ -189,7 +188,7 @@ footer {
     opacity: 0.5;
 }
 
-/* DIPLOME - TAILLE AGRANDIE */
+
 .bac-container img {
     max-width: 900px; /* Augmenté pour une image plus grande */
     width: 100%;      /* Garde l'image responsive sur mobile */
@@ -199,11 +198,12 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Optionnel : ajoute du relief */
 }
 
-/* On s'assure que la section prend bien toute la largeur */
+
 .center-bac {
     grid-column: 1 / span 3; 
     text-align: center;
 }
+
 
 
 
