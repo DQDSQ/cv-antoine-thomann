@@ -1,0 +1,212 @@
+:root {
+    --bg: #0b0b12;
+    --card: #161625;
+    --accent: #8b5cf6;
+    --text: #eaeaf0;
+    --muted: #b0b0c3;
+    --border: rgba(139, 92, 246, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* HEADER */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 2px solid var(--accent);
+    background: linear-gradient(to bottom, #11111d, var(--bg));
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: var(--accent);
+}
+
+.hero h2 {
+    font-size: 1.2rem;
+    color: var(--muted);
+    margin-top: 10px;
+}
+
+.tagline {
+    margin: 20px 0 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pdf-btn {
+    background: var(--accent);
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+}
+
+.pdf-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.6);
+}
+
+/* GRID LAYOUT */
+.grid {
+    max-width: 1200px;
+    margin: auto;
+    padding: 60px 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    align-items: start; /* Empêche les cartes de s'étirer verticalement */
+}
+
+.card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 14px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: var(--accent);
+}
+
+.card h3 {
+    color: var(--accent);
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.wide {
+    grid-column: span 2;
+}
+
+/* ALINÉA */
+.alinea {
+    text-indent: 40px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* CONTACT LIST */
+.contact-list li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.contact-list i {
+    color: var(--accent);
+    width: 20px;
+    text-align: center;
+}
+
+/* SKILLS */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background: rgba(139, 92, 246, 0.15);
+    border: 1px solid var(--border);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+}
+
+/* ELEMENTS */
+.date {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+ul { list-style: none; }
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+/* DIPLOME */
+.bac-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.bac-container img {
+    max-width: 100%;
+    border-radius: 12px;
+    border: 2px solid var(--accent);
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: var(--muted);
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+    .wide { grid-column: span 1; }
+}
+
+/* PRINT */
+@media print {
+    body { background: white; color: black; }
+    .pdf-btn { display: none; }
+    .card { background: white; color: black; border: 1px solid #ddd; }
+    .alinea { text-indent: 0; } /* On retire l'alinéa pour l'impression si besoin */
+}
+.separator {
+    grid-column: span 3;
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--accent), transparent);
+    margin: 20px 0;
+    opacity: 0.5;
+}
+
+/* DIPLOME - TAILLE AGRANDIE */
+.bac-container img {
+    max-width: 900px; /* Augmenté pour une image plus grande */
+    width: 100%;      /* Garde l'image responsive sur mobile */
+    border-radius: 12px;
+    border: 2px solid var(--accent);
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Optionnel : ajoute du relief */
+}
+
+/* On s'assure que la section prend bien toute la largeur */
+.center-bac {
+    grid-column: 1 / span 3; 
+    text-align: center;
+}
+
+
+
+
+
+
