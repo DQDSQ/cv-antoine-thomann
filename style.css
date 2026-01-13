@@ -75,7 +75,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
-    align-items: start; /* Empêche les cartes de s'étirer verticalement */
+    align-items: start; 
 }
 
 .card {
@@ -177,7 +177,7 @@ footer {
     body { background: white; color: black; }
     .pdf-btn { display: none; }
     .card { background: white; color: black; border: 1px solid #ddd; }
-    .alinea { text-indent: 0; } /* On retire l'alinéa pour l'impression si besoin */
+    .alinea { text-indent: 0; } 
 }
 .separator {
     grid-column: span 3;
@@ -190,12 +190,12 @@ footer {
 
 
 .bac-container img {
-    max-width: 900px; /* Augmenté pour une image plus grande */
-    width: 100%;      /* Garde l'image responsive sur mobile */
+    max-width: 900px; 
+    width: 100%;      
     border-radius: 12px;
     border: 2px solid var(--accent);
     margin-top: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Optionnel : ajoute du relief */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -203,6 +203,7 @@ footer {
     grid-column: 1 / span 3; 
     text-align: center;
 }
+
 
 
 
